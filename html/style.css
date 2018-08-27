@@ -13,7 +13,7 @@ page {
   height: 14.8cm; 
   margin: 1cm auto;
   box-sizing: border-box;
-  padding: 1cm;
+  padding: 0.5cm;
 }
 
 page[layout="continue"] {
@@ -42,6 +42,12 @@ h2{
 h3{
   font-weight: bold;
   margin-bottom: 0;
+  font-size: 110%;
+}
+
+h4{
+  font-style: italic;
+  margin: 0;
   font-size: 100%;
 }
 
@@ -58,12 +64,17 @@ section{
 
 article{
   break-after: column;
-  height:12cm;
+  height:13cm;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .competences>li:before,
 .competences>ul>li:before,
 .bonus>li:before,
+.bonus>center>li:before,
 .bonus>ul>li:before{
   content : "\1F315";
   margin-right: 4px;
