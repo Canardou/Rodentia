@@ -5,12 +5,22 @@ body {
 	background: rgb(204,204,204);
 }
 
+@media print{
+  page {
+    size: A5;
+  }
+}
+@media screen{
+  page {
+    width:21.0cm;
+    height:14.8cm;
+  }
+}
+
 page {
   background: white;
   display: block;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-  width: 21cm;
-  height: 14.8cm; 
   margin: 1cm auto;
   box-sizing: border-box;
   padding: 0.5cm;
@@ -76,11 +86,13 @@ ul{
 .bonus>li:before,
 .bonus>center>li:before,
 .bonus>ul>li:before{
+  font-family: Segoe UI Symbol;
   content : "\1F315";
   margin-right: 4px;
 }
 
 li.taken:before{
+  font-family: Segoe UI Symbol;
   content : "\1F311";
 }
 
@@ -157,4 +169,8 @@ table {
 
 td {
   text-align: center;
+}
+
+.unstyled{
+  font-family: Segoe UI Symbol;
 }
